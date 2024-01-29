@@ -1,0 +1,93 @@
+
+/* Estructura */
+/* selector {
+    propiedad: valor;
+} */
+
+/* Selectores:
+Universal : *
+De tipo : Elementos html (section, h1)
+ID : #contact-form
+Clases : .contact-form__input
+Por atributo : [atributo = 'valor']
+Descendiente : h1 p{}
+pseudo clase : .h1 p:hover{} */
+
+/* Especificidad
+-!important
+-Estilos en línea
+-Identificadores
+-Clases, pseudo-clases, atributos
+-Elementos, pseudo-elementos */
+
+/* Metodología BEM : Se utiliza la clase del padre y se nombran los hijos con dos guiones bajos 
+.contact-form  -> padre
+.contact-form__input -> hijo */
+/* de esta manera se sabe qué elemento se está seleccionando según la clase del padre */
+
+/* Unidades
+1 em : es igual al valor que se le da al contenedor padre si no hay un valor en el padre se hereda del padre del padre y así
+1 rem: se refiere al valor que se asigne al elemento raíz del doc(html) 
+vw : viewport width es lo que se puede ver
+vh : viewport heigth es lo que se puede ver */
+
+/* Propiedades de texto */
+/* line-heigth: es la cantidad de espacio que ocupa una letra, no el tamaño sino el espacio, y la medidad se divide en 2, mitad hacia arriba y mitad hacia abajo */
+
+/* Colores */
+/* Notación hexadecimal */
+.color1 {
+    color: #ff0000; /* Rojo */
+}
+
+/* Notación rgb */
+.color2 {
+    background-color: rgb(255, 0, 0); /* Rojo */
+}
+
+/* Notación rgba (con transparencia) */
+.color3 {
+    border: 2px solid rgba(0, 128, 255, 0.5); /* Azul con transparencia */
+}
+
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Positioning */
+/* Relative Positioning */
+.relative-box {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+/* Absolute Positioning */
+.absolute-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Transiciones y Animaciones */
+.transition-example {
+    transition: background-color 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Está también Flash */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}

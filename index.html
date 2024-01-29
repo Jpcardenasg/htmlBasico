@@ -3,22 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information</title>
+    <title>Etiquetas</title>
 </head>
 <body>
-    <h1>Information about me!</h1>
-    <h2>I am Juan Pablo Cárdenas González!</h2>
-    <p>A civil engineer passionate about programming. I decided to delve into the tech world because I found it incredibly interesting and aligned with my personal goals. Additionally, I am an enthusiastic learner and enjoy contributing in any work setting I find myself in.</p>
-    <ul>
-        <li><a href="storage/data/personalInfo.json">Personal Information</a></li>
-        <li><a href="storage/data/educationalBackground.json">Educational Background</a></li>
-        <li><a href="storage/data/workingInfo.json">Working Information</a></li>
-    </ul>
 
-    <h2>Ejercicio 1</h2>
-    <a href="images.html">See authors' images</a>
+    <!-- Encabezado -->
+    <header>
+        <h1>Nombre de la Página</h1>
+        <p>Descripción del sitio.</p>
+        <!-- <p>Descripción del sitio.&lt;span&gt;&lt;/span&gt;</p> -->
+    </header>
 
-    <h2>Ejecicio 2</h2>
-    <a href="tablas.html">See tables and lists</a>
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section> <!-- Define una seccción temática o agrupación de contenido relacionado. Se utiliza para divir una página en partes organizadas y siginificativas -->
+
+        <article> <!-- Define una sección independiente y autónoma de contenido en una página -->
+            <h2>Artículo 1</h2>
+            <p>Contenido del artículo.</p>
+        </article>
+
+        <article>
+            <h2>Artículo 2</h2>
+            <p>Contenido del segundo artículo.</p>
+        </article>
+    </section>
+
+    <!-- Contenido lateral -->
+    <aside>
+        <h3>Anuncios</h3>
+        <p>Contenido lateral relacionado.</p>
+    </aside>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Derechos de autor &copy; 2024 Nombre de la Página</p>
+    </footer>
+
+    <!-- Multimedia -->
+    <section>
+        <h2>Multimedia</h2>
+
+        <!-- Imagen -->
+        <img src="imagen.jpg" alt="Descripción de la imagen">
+
+        <!-- Audio -->
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <!-- Video -->
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <!-- Contenido externo en un iframe -->
+        <iframe src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Contenedoras -->
+    <div></div>
+    <span></span>
+
 </body>
 </html>
