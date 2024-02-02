@@ -278,3 +278,59 @@ CSS Grid proporciona propiedades para alinear y justificar elementos en el grid,
 justify-items: center;
 align-items: end;
 ```
+
+
+# Media Queries en CSS
+
+## Introducción
+
+Las media queries en CSS son una herramienta poderosa que permite adaptar el estilo de un sitio web según las características del dispositivo o la ventana del navegador. Esto es esencial para crear diseños responsivos que se vean bien en una variedad de dispositivos y tamaños de pantalla.
+
+## Sintaxis Básica
+
+Una media query típicamente sigue la siguiente sintaxis:
+
+```css
+@media tipo-de-medio y (características) {
+  /* Reglas CSS para el tipo de medio y características específicas */
+}
+```
+
+## Media Queries para Diferentes Tamaños de Pantalla
+
+### Pantallas Pequeñas (Mobile)
+
+```css
+/* Estilos base para pantallas pequeñas */
+body {
+  font-size: 16px;
+}
+
+/* Media query para pantallas pequeñas (hasta 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Media query para pantallas medianas (de 481px a 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Media query para pantallas grandes (de 769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Media query para pantallas extra grandes (más de 1024px) */
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 20px;
+  }
+}
+```
